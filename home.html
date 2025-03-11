@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="style1.css"> <!-- Link to external CSS file for styling -->
+   <script src="script.js" defer></script> <!-- Link to external JS file for functionality -->
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to Travel Booking</h1>
+        <p>Find the best deals for your next adventure!</p>
+    </section>
+
+    <!-- Search Form for Booking -->
+    <section id="booking-form">
+        <h2>Book Your Next Trip</h2>
+        <form action="search_results.html" method="GET">
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date" name="departure-date" required>
+
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" name="return-date" required>
+
+            <label for="number-of-passengers">Number of Passengers:</label>
+            <input type="number" id="number-of-passengers" name="number-of-passengers" min="1" value="1" required>
+
+            <button type="submit">Search Flights</button>
+        </form>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination">
+            <img src="goa.jpg" alt="goa">
+            <p>Goa</p>
+        </div>
+        <div class="destination">
+            <img src="himachal.jpg" alt="himachal">
+            <p>Himachal</p>
+        </div>
+        <div class="destination">
+            <img src="rajasthan.jpg" alt="rajasthan">
+            <p>Rajasthan</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a travel agency committed to providing you with the best vacation and travel experiences. Book your flights, hotels, and packages with us and enjoy the best deals in the market!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Travel Booking. All rights reserved.</p>
+        <p>Follow us on social media:</p>
+        <ul>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
